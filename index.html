@@ -129,7 +129,7 @@
   .clients .clabel{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600}
   .clients .ctags{display:flex;flex-wrap:wrap;gap:8px 20px}
   .clients .ctags span{font-family:'Cormorant Garamond',serif;font-size:23px}
-  @media(max-width:860px){ .clients{flex-direction:column;gap:10px} }
+  @media(max-width:860px){ .clients{flex-direction:column;gap:10px;margin-top:22px} }
 
   /* ACTING */
   .credits{border-top:1px solid var(--line)}
@@ -197,7 +197,7 @@
     .cover .wrap h1,.cover .wrap .role,.cover .wrap .loc,.cover .ph.cover-media img{animation:none !important}
   }
   /* ---- hover + scroll motion across the deck (web + mobile) ---- */
-  .sec-modeling{margin-top:-30px}
+  .sec-modeling{padding-top:0;margin-top:-72px}
   .stat{transition:transform .45s cubic-bezier(.16,1,.3,1)}
   .stat:hover{transform:translateY(-4px)}
   .stat .v .cnum{display:inline-block;font-variant-numeric:tabular-nums;transition:color .4s}
@@ -251,6 +251,8 @@
   }
   @media(max-width:520px){
     .grid3,.mason{columns:1;grid-template-columns:1fr}
+    .cover .loc{white-space:nowrap;letter-spacing:.05em;font-size:min(12px,2.85vw)}
+    .sec-modeling{margin-top:-56px}
   }
 </style>
 </head>
