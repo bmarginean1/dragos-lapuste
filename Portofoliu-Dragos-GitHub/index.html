@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dragoș Lapuște — Actor · Model</title>
+<meta name="description" content="Dragoș Lapuște — Actor & Model, Cluj-Napoca. Portfolio · showreel · measurements · digitals. KSM Media House.">
+<!-- Social share preview (WhatsApp / email / Messenger). Update the base URL below to your GitHub Pages URL. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KSM Media House">
+<meta property="og:title" content="Dragoș Lapuște — Actor · Model">
+<meta property="og:description" content="Actor & Model · Cluj-Napoca, Romania. Showreel, measurements & digitals — bilingual EN/RO portfolio.">
+<meta property="og:url" content="https://bmarginean1.github.io/dragos-lapuste/">
+<meta property="og:image" content="https://bmarginean1.github.io/dragos-lapuste/web/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dragoș Lapuște — Actor · Model">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dragoș Lapuște — Actor · Model">
+<meta name="twitter:description" content="Actor & Model · Cluj-Napoca, Romania. Showreel, measurements & digitals.">
+<meta name="twitter:image" content="https://bmarginean1.github.io/dragos-lapuste/web/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F1EC;
+    --ink:#141210;
+    --muted:#6b645c;
+    --line:#d8d2c8;
+    --accent:#8f2f22;      /* oxblood, used sparingly */
+    --ph:#e7e2d9;          /* placeholder base */
+    --maxw:1400px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,Helvetica,Arial,sans-serif;
+    font-weight:400;line-height:1.5;letter-spacing:.01em;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  /* film grain overlay */
+  body::after{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 6vw}
+  .eyebrow{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);font-weight:500}
+  .serif{font-family:'Cormorant Garamond',Georgia,serif}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;
+      padding:22px 6vw;mix-blend-mode:difference;color:#fff}
+  nav .brand{font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:600}
+  .lang{display:flex;gap:0;align-items:center;font-size:11px;letter-spacing:.15em;font-weight:600}
+  .lang button{background:none;border:none;color:inherit;font:inherit;cursor:pointer;padding:4px 7px;opacity:.5;transition:opacity .3s}
+  .lang button.on{opacity:1}
+  .lang span{opacity:.4}
+
+  /* COVER */
+  .cover{position:relative;height:100vh;min-height:640px;display:flex;align-items:flex-end;
+         color:#fff;overflow:hidden}
+  .cover .ph{position:absolute;inset:0}
+  .cover-media{position:absolute;inset:0;background:
+      radial-gradient(120% 90% at 70% 20%,#3a3733 0%,#1c1a17 55%,#0d0c0b 100%)}
+  /* higher specificity so the dark hero wins over the .ph placeholder fill */
+  .cover .ph.cover-media{
+      background-color:#131110;
+      background-image:
+        repeating-linear-gradient(45deg,rgba(255,255,255,.022) 0 12px,transparent 12px 24px),
+        radial-gradient(120% 95% at 68% 18%,#3d3a35 0%,#1b1916 55%,#0b0a09 100%);
+  }
+  .cover-media .plabel{color:#fff;opacity:.5}
+  .cover::before{content:"";position:absolute;inset:0;z-index:1;
+      background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.55) 100%)}
+  .cover .wrap{position:relative;z-index:2;width:100%;padding-bottom:7vh}
+  .cover h1{font-family:'Cormorant Garamond',serif;font-weight:300;line-height:.92;
+     font-size:clamp(56px,12vw,190px);letter-spacing:-.01em}
+  .cover .role{display:flex;gap:18px;align-items:center;margin-top:18px;font-size:13px;
+     letter-spacing:.28em;text-transform:uppercase;font-weight:500}
+  .cover .role .dot{width:5px;height:5px;border-radius:50%;background:#fff;opacity:.7}
+  .cover .loc{margin-top:26px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.75}
+  /* scroll cue removed */
+
+  /* SECTION SCAFFOLD */
+  section{padding:min(14vh,140px) 0}
+  .sec-head{display:flex;align-items:baseline;gap:22px;margin-bottom:46px}
+  .sec-head .num{font-size:11px;letter-spacing:.2em;color:var(--accent);font-weight:600}
+  .sec-head h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(30px,5vw,60px);line-height:1}
+
+  /* STATS */
+  .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stats .grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .stat{padding:30px 24px 30px 0}
+  .stat .k{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .stat .v{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:400}
+  .stat .v small{font-size:15px;color:var(--muted)}
+
+  /* SHOWREEL */
+  .reel .frame{position:relative;aspect-ratio:16/9;background:
+     radial-gradient(120% 120% at 50% 40%,#232120,#0e0d0c);display:flex;align-items:center;justify-content:center;
+     cursor:pointer;overflow:hidden}
+  .play{width:88px;height:88px;border:1px solid rgba(255,255,255,.6);border-radius:50%;display:flex;
+     align-items:center;justify-content:center;transition:transform .4s,background .4s}
+  .reel .frame:hover .play{transform:scale(1.08);background:rgba(255,255,255,.08)}
+  .play::after{content:"";border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:5px}
+  .reel .cap{display:flex;justify-content:space-between;margin-top:16px;font-size:11px;letter-spacing:.18em;
+     text-transform:uppercase;color:var(--muted)}
+
+  /* GALLERIES */
+  .gal-tall{aspect-ratio:4/5}
+  .gal-wide{aspect-ratio:3/2}
+  .modeling-lead{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;margin-bottom:20px}
+  .modeling-lead .col{display:flex;flex-direction:column;gap:20px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .compcard{margin-top:60px;border:1px solid var(--line);padding:34px;display:grid;
+     grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:#fbf9f5}
+  .compcard .cc-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px 30px}
+  .compcard .cc-stats .k{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .compcard .cc-stats .v{font-family:'Cormorant Garamond',serif;font-size:24px}
+  .compcard .cc-note{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+  .cc-links{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+  .cc-links a{color:var(--ink);text-decoration:none;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+     border:1px solid var(--line);border-radius:2px;padding:12px 16px;transition:background .3s,color .3s}
+  .cc-links a:hover{background:var(--ink);color:var(--bg)}
+  .clients{margin:-14px 0 34px;display:flex;align-items:baseline;gap:22px;flex-wrap:wrap}
+  .clients .clabel{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  .clients .ctags{display:flex;flex-wrap:wrap;gap:8px 20px}
+  .clients .ctags span{font-family:'Cormorant Garamond',serif;font-size:23px}
+  @media(max-width:860px){ .clients{flex-direction:column;gap:10px} }
+
+  /* ACTING */
+  .credits{border-top:1px solid var(--line)}
+  .cred-group{padding:30px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:180px 1fr;gap:20px}
+  .cred-group h3{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);padding-top:6px}
+  .cred-row{display:grid;grid-template-columns:60px 1.6fr 1fr 1fr;gap:16px;padding:10px 0;
+     border-bottom:1px dotted var(--line);font-size:14px;align-items:baseline}
+  .cred-row:last-child{border-bottom:none}
+  .cred-row .yr{color:var(--muted);font-size:12px}
+  .cred-row .ttl{font-weight:500}
+  .cred-row .ttl a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:1px;transition:border-color .3s}
+  .cred-row .ttl a:hover{border-color:var(--accent)}
+  .cred-row .ttl a::after{content:" ↗";font-size:11px;color:var(--muted)}
+  .cred-row .rl,.cred-row .dir{color:var(--muted);font-size:13px}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:50px}
+  .twocol h3{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+  .twocol p{font-size:14px;color:#33302c}
+  .twocol .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .twocol .tags span{border:1px solid var(--line);border-radius:2px;padding:6px 12px;font-size:12px;
+     letter-spacing:.04em}
+  .skgroup{margin-bottom:16px}
+  .skgroup .sklabel{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+
+  /* SELECTED WORK */
+  .mason{columns:3;column-gap:20px}
+  .mason .ph{margin-bottom:20px;break-inside:avoid}
+
+  /* CONTACT */
+  .contact{background:var(--ink);color:var(--bg);padding:min(16vh,150px) 0}
+  .contact h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(40px,8vw,110px);line-height:1;margin-bottom:40px}
+  .contact .rows{display:grid;grid-template-columns:1fr 1fr;gap:40px 60px;max-width:900px}
+  .contact .k{font-size:10px;letter-spacing:.24em;text-transform:uppercase;opacity:.55;margin-bottom:8px}
+  .contact .v{font-size:18px;font-weight:400}
+  .contact a{color:var(--bg);text-decoration:none;border-bottom:1px solid rgba(244,241,236,.3);transition:border-color .3s}
+  .contact a:hover{border-color:var(--bg)}
+  .dl{display:flex;gap:14px;flex-wrap:wrap;margin-top:56px}
+  .dl a{border:1px solid rgba(244,241,236,.35);border-bottom:1px solid rgba(244,241,236,.35);
+     padding:16px 26px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;border-radius:2px;
+     display:flex;gap:12px;align-items:center;transition:background .3s,color .3s}
+  .dl a:hover{background:var(--bg);color:var(--ink)}
+  .foot{margin-top:80px;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.2em;
+     text-transform:uppercase;opacity:.5;flex-wrap:wrap;gap:10px}
+
+  /* PLACEHOLDER STYLE */
+  .ph{position:relative;background:var(--ph);overflow:hidden;
+      background-image:repeating-linear-gradient(45deg,rgba(0,0,0,.025) 0 12px,transparent 12px 24px)}
+  .ph .plabel{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+      text-align:center;gap:6px;color:var(--muted);padding:16px}
+  .ph .plabel .t{font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+  .ph .plabel .s{font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+  .ph .plabel .ic{font-family:'Cormorant Garamond',serif;font-size:26px;opacity:.5;margin-bottom:2px}
+
+  /* REVEAL / MOTION */
+  .rv{opacity:0;transform:translateY(28px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);will-change:opacity,transform}
+  .rv.in{opacity:1;transform:none}
+  .sec-head.rv{transform:translateY(36px)}
+  #progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--accent);z-index:9998;transition:width .12s linear;pointer-events:none}
+  .cover .wrap h1{animation:rise 1.15s cubic-bezier(.16,1,.3,1) both}
+  .cover .wrap .role{animation:rise 1.15s .16s cubic-bezier(.16,1,.3,1) both}
+  .cover .wrap .loc{animation:rise 1.15s .30s cubic-bezier(.16,1,.3,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+  @keyframes kb{from{transform:scale(1.09)}to{transform:scale(1)}}
+  @media(prefers-reduced-motion:reduce){
+    .rv,.rv.in{opacity:1 !important;transform:none !important;transition:none}
+    .cover .wrap h1,.cover .wrap .role,.cover .wrap .loc,.cover .ph.cover-media img{animation:none !important}
+  }
+
+  /* real images inside frames */
+  .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block;transition:transform 1.4s cubic-bezier(.16,1,.3,1)}
+  .ph:hover img{transform:scale(1.045)}
+  .cover .ph.cover-media img{object-position:50% 10%;animation:kb 22s ease-out both}
+  .figure-full{position:relative;margin:22px 0 0;aspect-ratio:16/9;overflow:hidden}
+  .figure-full img{object-position:50% 40%}
+  .mason .ph{position:relative;background:none}
+  .mason .ph img{position:static;width:100%;height:auto}
+  .reel .frame .reel-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 26%;background:#0c0b0a;display:block;z-index:0}
+  .reel .frame.playing .reel-video{z-index:5;object-position:50% 50%}
+  .reel .frame .reel-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 26%;z-index:1;pointer-events:none}
+  .reel .frame.playing .reel-poster{display:none}
+  .reel .frame::after{content:"";position:absolute;inset:0;background:rgba(12,11,10,.30);transition:background .4s;z-index:2;pointer-events:none}
+  .reel .frame:hover::after{background:rgba(12,11,10,.14)}
+  .reel .frame.playing::after{display:none}
+  .reel .frame .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:3;background:none;padding:0}
+  .reel .frame:hover .play{transform:translate(-50%,-50%) scale(1.08);background:rgba(255,255,255,.10)}
+  .reel .frame.playing .play{display:none}
+
+  @media(max-width:860px){
+    .stats .grid{grid-template-columns:repeat(2,1fr)}
+    .modeling-lead{grid-template-columns:1fr}
+    .grid3{grid-template-columns:1fr 1fr}
+    .compcard{grid-template-columns:1fr;gap:24px}
+    .mason{columns:2}
+    .cred-group{grid-template-columns:1fr}
+    .cred-row{grid-template-columns:44px 1fr;gap:6px 12px}
+    .cred-row .rl,.cred-row .dir{grid-column:2}
+    .twocol,.contact .rows{grid-template-columns:1fr}
+  }
+  @media(max-width:520px){
+    .grid3,.mason{columns:1;grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+
+<nav>
+  <div class="brand" data-en="KSM Media House" data-ro="KSM Media House">KSM Media House</div>
+  <div class="lang">
+    <button id="btn-en" class="on" onclick="setLang('en')">EN</button><span>/</span><button id="btn-ro" onclick="setLang('ro')">RO</button>
+  </div>
+</nav>
+
+<!-- COVER -->
+<header class="cover">
+  <div class="ph cover-media">
+    <img src="web/hero.jpg" alt="Dragoș Lapuște">
+  </div>
+  <div class="wrap">
+    <h1>Dragoș<br>Lapuște</h1>
+    <div class="role">
+      <span data-en="Actor" data-ro="Actor">Actor</span>
+      <span class="dot"></span>
+      <span data-en="Model" data-ro="Model">Model</span>
+    </div>
+    <div class="loc" data-en="Cluj-Napoca, Romania · Represented worldwide" data-ro="Cluj-Napoca, România · Reprezentat internațional">Cluj-Napoca, Romania · Represented worldwide</div>
+  </div>
+  <!-- scroll cue removed -->
+</header>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">01</span>
+      <h2 data-en="Vitals" data-ro="Date fizice">Vitals</h2></div>
+    <div class="grid">
+      <div class="stat rv"><div class="k" data-en="Height" data-ro="Înălțime">Height</div><div class="v">192 <small>cm</small></div></div>
+      <div class="stat rv"><div class="k" data-en="Chest" data-ro="Piept">Chest</div><div class="v">99 <small>cm</small></div></div>
+      <div class="stat rv"><div class="k" data-en="Waist" data-ro="Talie">Waist</div><div class="v">75 <small>cm</small></div></div>
+      <div class="stat rv"><div class="k" data-en="Hips" data-ro="Șold">Hips</div><div class="v">98 <small>cm</small></div></div>
+      <div class="stat rv"><div class="k" data-en="Shoe" data-ro="Încălțăminte">Shoe</div><div class="v">44 <small>EU</small></div></div>
+      <div class="stat rv"><div class="k" data-en="Hair" data-ro="Păr">Hair</div><div class="v" data-en="Brown" data-ro="Șaten">Brown</div></div>
+      <div class="stat rv"><div class="k" data-en="Eyes" data-ro="Ochi">Eyes</div><div class="v" data-en="Green" data-ro="Verzi">Green</div></div>
+      <div class="stat rv"><div class="k" data-en="Playing age" data-ro="Vârstă de joc">Playing age</div><div class="v">20–28</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWREEL -->
+<section class="reel">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">02</span>
+      <h2 data-en="Showreel" data-ro="Showreel">Showreel</h2></div>
+    <div class="frame rv" id="reelframe">
+      <video id="reelvid" class="reel-video" poster="web/reel.jpg" preload="none" playsinline>
+        <source src="web/reel.mp4" type="video/mp4">
+      </video>
+      <img class="reel-poster" src="web/reel.jpg" alt="Showreel — Dragoș Lapuște">
+      <span class="play" id="reelplay" onclick="playReel()" onkeydown="if(event.key==='Enter'||event.key===' ')playReel()" role="button" tabindex="0" aria-label="Play showreel"></span>
+    </div>
+    <div class="cap">
+      <span data-en="Acting demo reel" data-ro="Demo de actorie">Acting demo reel</span>
+      <a href="https://youtu.be/GpDX-_13LB8" target="_blank" rel="noopener" style="color:inherit" data-en="Watch on YouTube ↗" data-ro="Vezi pe YouTube ↗">Watch on YouTube ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- MODELING -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">03</span>
+      <h2 data-en="Modeling" data-ro="Modeling">Modeling</h2></div>
+    <div class="clients rv">
+      <span class="clabel" data-en="Selected clients" data-ro="Clienți selectați">Selected clients</span>
+      <div class="ctags"><span>Bershka</span><span>IRO Paris</span><span>Vogue Korea</span><span>Vogue Italia</span></div>
+    </div>
+    <div class="modeling-lead">
+      <div class="ph gal-tall rv"><img src="web/m_tall.jpg" alt=""></div>
+      <div class="col">
+        <div class="ph gal-wide rv"><img src="web/m_s1.jpg" style="object-position:50% 22%" alt=""></div>
+        <div class="ph gal-wide rv"><img src="web/m_s2.jpg" style="object-position:50% 14%" alt=""></div>
+      </div>
+    </div>
+    <figure class="ph figure-full rv"><img src="web/feature.jpg" alt=""></figure>
+    <div class="grid3">
+      <div class="ph gal-tall rv"><img src="web/g1.jpg" alt=""></div>
+      <div class="ph gal-tall rv"><img src="web/g2.jpg" alt=""></div>
+      <div class="ph gal-tall rv"><img src="web/g3.jpg" style="object-position:50% 18%" alt=""></div>
+    </div>
+
+    <!-- comp card block -->
+    <div class="compcard rv">
+      <div class="cc-stats">
+        <div><div class="k" data-en="Height" data-ro="Înălțime">Height</div><div class="v">192 cm</div></div>
+        <div><div class="k" data-en="Chest" data-ro="Piept">Chest</div><div class="v">99 cm</div></div>
+        <div><div class="k" data-en="Waist" data-ro="Talie">Waist</div><div class="v">75 cm</div></div>
+        <div><div class="k" data-en="Suit" data-ro="Sacou">Suit</div><div class="v">40</div></div>
+        <div><div class="k" data-en="Shoe" data-ro="Încălțăminte">Shoe</div><div class="v">44 EU</div></div>
+        <div><div class="k" data-en="Hair / Eyes" data-ro="Păr / Ochi">Hair / Eyes</div><div class="v" data-en="Brown / Green" data-ro="Șaten / Verzi">Brown / Green</div></div>
+      </div>
+      <div>
+        <div class="eyebrow" data-en="Comp card" data-ro="Comp card">Comp card</div>
+        <p class="serif" style="font-size:22px;margin-top:10px;line-height:1.3" data-en="Downloadable one-sheets — industry standard for agency submissions." data-ro="One-sheet-uri descărcabile — formatul standard pentru trimis la agenții.">Downloadable one-sheets — industry standard for agency submissions.</p>
+        <div class="cc-links">
+          <a href="Dragos-Lapuste-Measurements.pdf" target="_blank" rel="noopener" data-en="↓  Measurements (PDF)" data-ro="↓  Măsurători (PDF)">↓  Measurements (PDF)</a>
+          <a href="Dragos-Lapuste-Digitals.pdf" target="_blank" rel="noopener" data-en="↓  Digitals / polaroids (PDF)" data-ro="↓  Digitals / polaroids (PDF)">↓  Digitals / polaroids (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTING -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">04</span>
+      <h2 data-en="Acting" data-ro="Actorie">Acting</h2></div>
+    <div class="credits rv">
+      <div class="cred-group">
+        <h3 data-en="Film" data-ro="Film">Film</h3>
+        <div>
+          <div class="cred-row"><span class="yr">2026</span><span class="ttl"><a href="https://www.imdb.com/title/tt37988531/" target="_blank" rel="noopener">Acel martie</a></span><span class="rl">Nikolai</span><span class="dir" data-en="Feature film" data-ro="Lungmetraj">Feature film</span></div>
+          <div class="cred-row"><span class="yr">2026</span><span class="ttl"><a href="https://www.imdb.com/title/tt37989931/" target="_blank" rel="noopener">Dosarele Orașului Alb</a></span><span class="rl">Radulian</span><span class="dir" data-en="Feature film" data-ro="Lungmetraj">Feature film</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="twocol rv">
+      <div>
+        <h3 data-en="Training" data-ro="Formare">Training</h3>
+        <p data-en="Iura Film — Film acting · graduate (2 × 6-month courses)" data-ro="Iura Film — Actorie de film · absolvent (2 cursuri de 6 luni)">Iura Film — Film acting · graduate (2 × 6-month courses)</p>
+        <p style="margin-top:10px" data-en="Technique — Stanislavski. Voice, stage movement, improvisation." data-ro="Tehnică — Stanislavski. Voce, mișcare scenică, improvizație.">Technique — Stanislavski. Voice, stage movement, improvisation.</p>
+      </div>
+      <div>
+        <h3 data-en="Special skills" data-ro="Abilități speciale">Special skills</h3>
+        <div class="skgroup">
+          <div class="sklabel" data-en="Languages" data-ro="Limbi">Languages</div>
+          <div class="tags">
+            <span data-en="Romanian — native" data-ro="Română — nativ">Romanian — native</span>
+            <span data-en="English" data-ro="Engleză">English</span>
+          </div>
+        </div>
+        <div class="skgroup">
+          <div class="sklabel" data-en="Sports" data-ro="Sport">Sports</div>
+          <div class="tags">
+            <span data-en="Swimming" data-ro="Înot">Swimming</span>
+            <span data-en="Football" data-ro="Fotbal">Football</span>
+            <span data-en="Calisthenics" data-ro="Calistenics">Calisthenics</span>
+          </div>
+        </div>
+        <div class="skgroup">
+          <div class="sklabel" data-en="Physical / stunt" data-ro="Fizic / cascadorie">Physical / stunt</div>
+          <div class="tags">
+            <span data-en="Stage combat" data-ro="Luptă scenică">Stage combat</span>
+            <span data-en="Skateboard" data-ro="Skateboard">Skateboard</span>
+            <span data-en="Bike" data-ro="Bicicletă">Bike</span>
+            <span data-en="Horse riding" data-ro="Călărie">Horse riding</span>
+          </div>
+        </div>
+        <div class="skgroup">
+          <div class="sklabel" data-en="Modeling" data-ro="Modeling">Modeling</div>
+          <div class="tags">
+            <span data-en="Runway walk" data-ro="Mers pe podium">Runway walk</span>
+            <span data-en="Posing" data-ro="Posing">Posing</span>
+            <span data-en="Editorial / runway" data-ro="Editorial / runway">Editorial / runway</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED WORK -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">05</span>
+      <h2 data-en="Selected work" data-ro="Selecție">Selected work</h2></div>
+    <div class="mason">
+      <div class="ph rv"><img src="web/sw1.jpg" alt=""></div>
+      <div class="ph rv"><img src="web/sw2.jpg" alt=""></div>
+      <div class="ph rv"><img src="web/sw3.jpg" alt=""></div>
+      <div class="ph rv"><img src="web/sw4.jpg" alt=""></div>
+      <div class="ph rv"><img src="web/sw5.jpg" alt=""></div>
+      <div class="ph rv"><img src="web/sw6.jpg" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <div class="wrap">
+    <h2 class="rv" data-en="Get in touch" data-ro="Contact">Get in touch</h2>
+    <div class="rows">
+      <div class="rv"><div class="k" data-en="Mother agency" data-ro="Agenție mamă">Mother agency</div><div class="v"><a href="https://www.instagram.com/mekamodels/" target="_blank" rel="noopener">MEKA Models · @mekamodels</a></div></div>
+      <div class="rv"><div class="k">🇺🇸 USA</div><div class="v"><a href="https://www.instagram.com/marilynagencyny/" target="_blank" rel="noopener">Marilyn NY · @marilynagencyny</a></div></div>
+      <div class="rv"><div class="k">🇪🇸 Spain</div><div class="v"><a href="https://www.instagram.com/twomanagement/" target="_blank" rel="noopener">Two Management · @twomanagement</a></div></div>
+      <div class="rv"><div class="k">🇮🇹 Italy</div><div class="v"><a href="https://www.instagram.com/independent_mgmt/" target="_blank" rel="noopener">Independent Mgmt · @independent_mgmt</a></div></div>
+      <div class="rv"><div class="k" data-en="Booking" data-ro="Booking">Booking</div><div class="v">KSM Media House · <a href="mailto:bogdan.marginean@ksmproduction.ro">bogdan.marginean@ksmproduction.ro</a></div></div>
+      <div class="rv"><div class="k" data-en="Phone / IG" data-ro="Telefon / IG">Phone / IG</div><div class="v"><a href="tel:+40755034195">+40 755 034 195</a> · <a href="https://www.instagram.com/god_dragos/" target="_blank" rel="noopener">@god_dragos</a></div></div>
+      <div class="rv"><div class="k" data-en="IMDb" data-ro="IMDb">IMDb</div><div class="v"><a href="https://www.imdb.com/name/nm17610931/" target="_blank" rel="noopener">Profile ↗</a> · <a href="https://www.imdb.com/name/nm17615236/" target="_blank" rel="noopener">Profile ↗</a></div></div>
+      <div class="rv"><div class="k" data-en="Representation" data-ro="Reprezentare">Representation</div><div class="v" data-en="Non-exclusive with all agencies" data-ro="Neexclusiv cu toate agențiile">Non-exclusive with all agencies</div></div>
+    </div>
+    <div class="dl rv">
+      <a href="Dragos-Lapuste-Measurements.pdf" target="_blank" rel="noopener" data-en="↓  Measurements (PDF)" data-ro="↓  Măsurători (PDF)">↓  Measurements (PDF)</a>
+      <a href="Dragos-Lapuste-Digitals.pdf" target="_blank" rel="noopener" data-en="↓  Digitals (PDF)" data-ro="↓  Digitals (PDF)">↓  Digitals (PDF)</a>
+    </div>
+    <div class="foot">
+      <span>© 2026 KSM Media House</span>
+      <span data-en="Portfolio · Actor · Model" data-ro="Portofoliu · Actor · Model">Portfolio · Actor · Model</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  function playReel(){
+    var f=document.getElementById('reelframe');
+    var v=document.getElementById('reelvid');
+    if(!f||!v) return;
+    f.classList.add('playing');
+    v.setAttribute('controls','');
+    var p=v.play();
+    if(p&&p.catch) p.catch(function(){});
+  }
+  // Open PDFs (embedded data-URI or relative file) in an inline overlay viewer.
+  // Works everywhere: file://, https, and sandboxed artifact/preview iframes (no popup needed).
+  function pdfName(a){var t=(a.getAttribute('data-en')||a.textContent||'PDF').replace(/[↓↗]/g,'').replace(/\(PDF\)/i,'').trim();return t||'PDF';}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest?e.target.closest('a[href^="data:application/pdf"], a[href$=".pdf"]'):null;
+    if(!a) return;
+    e.preventDefault();
+    var href=a.getAttribute('href'), url=href, fname=pdfName(a).replace(/\s+/g,'-')+'.pdf';
+    if(href.indexOf('data:application/pdf')===0){
+      try{
+        var b64=href.split(',')[1];
+        var bin=atob(b64), n=bin.length, arr=new Uint8Array(n);
+        for(var i=0;i<n;i++) arr[i]=bin.charCodeAt(i);
+        url=URL.createObjectURL(new Blob([arr],{type:'application/pdf'}));
+      }catch(err){ return; }
+    }
+    showPdf(url, pdfName(a), fname);
+  });
+  function showPdf(url,title,fname){
+    var o=document.getElementById('pdfOverlay');
+    if(!o){
+      o=document.createElement('div'); o.id='pdfOverlay';
+      o.style.cssText='position:fixed;inset:0;z-index:99999;background:rgba(12,11,10,.94);display:flex;flex-direction:column';
+      o.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;padding:12px 20px;color:#F4F1EC;font-family:Inter,Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase">'
+        +'<span id="pdfTitle"></span>'
+        +'<span><a id="pdfDl" download style="color:#F4F1EC;text-decoration:none;border:1px solid rgba(244,241,236,.4);padding:6px 12px;margin-right:14px">Download ↓</a>'
+        +'<a href="#" id="pdfClose" style="color:#F4F1EC;text-decoration:none;font-size:14px;letter-spacing:.1em">✕ Close</a></span></div>'
+        +'<iframe id="pdfFrame" title="PDF" style="flex:1;border:0;background:#fff"></iframe>';
+      document.body.appendChild(o);
+      document.getElementById('pdfClose').addEventListener('click',function(ev){ev.preventDefault();hidePdf();});
+      document.addEventListener('keydown',function(ev){if(ev.key==='Escape')hidePdf();});
+    }
+    o.style.display='flex';
+    document.getElementById('pdfTitle').textContent=title||'PDF';
+    var dl=document.getElementById('pdfDl'); dl.href=url; dl.setAttribute('download',fname||'document.pdf');
+    document.getElementById('pdfFrame').src=url;
+  }
+  function hidePdf(){var o=document.getElementById('pdfOverlay');if(o){o.style.display='none';document.getElementById('pdfFrame').src='about:blank';}}
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-'+l+']').forEach(function(el){
+      el.textContent=el.getAttribute('data-'+l);
+    });
+    document.getElementById('btn-en').classList.toggle('on',l==='en');
+    document.getElementById('btn-ro').classList.toggle('on',l==='ro');
+  }
+  // reveal on scroll
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el,i){
+    el.style.transitionDelay=(Math.min(i%6,5)*0.05)+'s';
+    io.observe(el);
+  });
+  // scroll progress bar
+  var pb=document.getElementById('progress');
+  function updProgress(){
+    if(!pb) return;
+    var h=document.documentElement, m=h.scrollHeight-h.clientHeight;
+    pb.style.width=(m>0 ? (h.scrollTop/m*100) : 0)+'%';
+  }
+  window.addEventListener('scroll',updProgress,{passive:true});
+  window.addEventListener('resize',updProgress);
+  updProgress();
+</script>
+</body>
+</html>
